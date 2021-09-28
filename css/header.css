@@ -1,0 +1,286 @@
+header {
+    height: 5rem;
+    /* background: var(--primary); */
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 76.5rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.mobile-nav .left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.left h1 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.left h1 .lio {
+    color: #FFF338;
+    font-weight: 500;
+}
+
+
+/* mobile nav */
+
+.right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+/* menu toggler */
+
+.toggler {
+    width: 2rem;
+    height: 3rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+.hamburger-menu {
+    width: 1.8rem;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu div {
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+
+/* hamburger menu lines */
+
+.hamburger-menu div,
+.hamburger-menu div::before,
+.hamburger-menu div::after {
+    content: "";
+    height: 0.2rem;
+    width: 100%;
+    background: var(--pure);
+    border-radius: 1rem;
+}
+
+
+/* top and bottom lines */
+
+.hamburger-menu div::before {
+    position: absolute;
+    top: -0.5rem;
+}
+
+.hamburger-menu div::after {
+    position: absolute;
+    top: 0.5rem;
+}
+
+
+/* rotate the hamburger menu when it is clicked */
+
+.toggler:checked+.hamburger-menu>div {
+    transform: rotate(135deg);
+}
+
+
+/* Rotate the top and bottom lines in the hamburger menu when it is clicked */
+
+.toggler:checked+.hamburger-menu>div::before,
+.toggler:checked+.hamburger-menu>div::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+
+/* Menu overlay */
+
+.menu-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    width: 0;
+    opacity: 0;
+    height: 100%;
+    background: var(--dark);
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    visibility: hidden;
+    padding: 4rem;
+    transition: all 0.3rem ease;
+    z-index: 999;
+}
+
+.background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.toggler:checked+.hamburger-menu+.menu>.background-overlay {
+    display: initial;
+}
+
+.toggler:checked+.hamburger-menu+.menu>.menu-overlay {
+    visibility: visible;
+    width: 44.7rem;
+    max-width: 100vw;
+    opacity: 1;
+}
+
+.toggler:checked {
+    z-index: 1001;
+}
+
+
+/* this puts hamburger menu on top */
+
+.toggler:checked+.hamburger-menu {
+    z-index: 1000;
+}
+
+.menu-overlay li,
+.menu-overlay-logo {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+}
+
+.menu-overlay li {
+    color: var(--pure);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.menu-overlay li a {
+    color: var(--pure);
+}
+
+.toggler:checked+.hamburger-menu+.menu>.menu-overlay li,
+.toggler:checked+.hamburger-menu+.menu>.menu-overlay .menu-overlay-logo {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu-overlay li:nth-child(1) {
+    transition: transform 0.1s ease;
+}
+
+.menu-overlay li:nth-child(2) {
+    transition: transform 0.2s ease;
+}
+
+.menu-overlay li:nth-child(3) {
+    transition: transform 0.3s ease;
+}
+
+.menu-overlay li:nth-child(4) {
+    transition: transform 0.4s ease;
+}
+
+.menu-overlay li:nth-child(5) {
+    transition: transform 0.5s ease;
+}
+
+.menu-overlay li:nth-child(6) {
+    transition: transform 0.6s ease;
+}
+
+.menu-overlay li:nth-child(7) {
+    transition: transform 0.7s ease;
+}
+
+.menu-overlay li:nth-child(8) {
+    transition: transform 0.8s ease;
+}
+
+
+/* change link color  */
+
+.menu-overlay li a:hover {
+    color: var(--primary);
+}
+
+
+/* Separator */
+
+.menu-overlay li:nth-child(6) {
+    width: 6rem;
+    height: 0.15rem;
+    margin: 2rem 0;
+    background: var(--pure);
+}
+
+
+/* scroll color change */
+
+.sticky {
+    /* padding: 15px 0; */
+    background-color: var(--primary);
+}
+
+.sticky1 {
+    color: var(--pure);
+}
+
+
+/* menu on Desktop */
+
+.nav-desktop {
+    display: none;
+    justify-content: space-between;
+    margin: 15px;
+    align-items: center;
+}
+
+.nav-desktop ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-desktop ul li {
+    font-size: 20px;
+    color: var(--pure);
+    margin-left: 1.5rem;
+    font-weight: 400;
+}
+
+.nav-desktop ul li a {
+    color: var(--pure);
+}
+
+.nav-desktop ul li a:hover {
+    color: var(--yellow);
+}
+
+.nav-desktop .left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}

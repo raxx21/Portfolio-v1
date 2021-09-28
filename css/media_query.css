@@ -1,0 +1,114 @@
+    /* These styles will be applied to screens that have a width of at least 768px */
+    
+    @media screen and (min-width: 768px) {
+        .text-1 {
+            font-size: 30px;
+        }
+        .text-2 {
+            font-size: 40px;
+        }
+        .text-3 {
+            font-size: 30px;
+        }
+        .particles-box {
+            display: flex;
+        }
+        .section2 {
+            flex-direction: row;
+            width: 70%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .section2-content>p,
+        .section2-content>h2 {
+            margin-left: 50px;
+        }
+        .section2>img {
+            height: 300px;
+            width: 350px;
+        }
+        .section3-gird {
+            grid-template-columns: auto auto;
+        }
+        .section3>h2 {
+            margin-left: 0px;
+        }
+        .section3-circle>h2 {
+            margin-left: 0px;
+        }
+        .album {
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+            position: relative;
+        }
+        .project-content {
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            justify-content: center;
+            opacity: 0;
+            margin-bottom: 0.4rem;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        .project-content:hover {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .ablum-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -100px;
+            margin-top: -40px;
+        }
+        .ablum-info2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -75px;
+            margin-top: -40px;
+        }
+        .project-content>h2 {
+            font-weight: 500;
+        }
+    }
+    /* These styles will be applied to screens that have a width of at least 992px */
+    
+    @media screen and (min-width: 992px) {
+        header {
+            height: 4.5rem;
+        }
+        .nav-desktop {
+            display: flex;
+            align-items: center;
+        }
+        .mobile-nav {
+            display: none;
+        }
+        .section1-content {
+            margin-left: 50px;
+        }
+        .text-1 {
+            font-size: 34px;
+        }
+        .text-2 {
+            font-size: 44px;
+        }
+        .text-3 {
+            font-size: 34px;
+        }
+        .section2-content>h2 {
+            font-size: 36px;
+        }
+        .album {
+            width: 90%;
+        }
+        .section4 .projects {
+            grid-template-columns: auto auto;
+        }
+    }
