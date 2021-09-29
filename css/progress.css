@@ -5,12 +5,11 @@
 .boxes {
     position: relative;
     top: 35%;
-    left: 50%;
-    width: 90%;
+    left: 10%;
+    width: 80%;
     max-width: 790px;
     height: 180px;
     font-family: "Open Sans", sans-serif;
-    transform: translate(-50%, -50%);
 }
 
 .box {
