@@ -135,8 +135,8 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    margin: 20px 0 0 25px;
-    font-size: 0.75rem;
+    margin: 20px 0 0 50px;
+    font-size: 0.45rem;
     font-weight: 600;
     text-transform: uppercase;
     transform: translate(-50%, 0);
