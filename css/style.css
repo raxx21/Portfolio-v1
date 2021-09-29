@@ -122,7 +122,6 @@
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: auto;
-    margin-top: 30px;
 }
 
 .album {
@@ -164,11 +163,24 @@
 }
 
 .section5 {
-    background-color: var(--dark);
-    height: 100vh;
+    height: 70vh;
+    /* background-color: var(--dark); */
 }
 
-.section5-contact {
+.section5>h2 {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section6 {
+    background-color: var(--dark);
+    height: 60vh;
+}
+
+.section6-contact {
     width: 80%;
     margin: auto;
     display: flex;

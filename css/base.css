@@ -18,10 +18,12 @@ body {
     font-family: 'Poppins', sans-serif;
     background: var(--pure);
     color: var(--pure);
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 ul {

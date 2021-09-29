@@ -109,6 +109,6 @@
             width: 90%;
         }
         .section4 .projects {
-            grid-template-columns: auto auto;
+            grid-template-columns: auto auto auto auto;
         }
     }
