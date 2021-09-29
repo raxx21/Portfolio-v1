@@ -76,6 +76,13 @@
         .project-content>h2 {
             font-weight: 500;
         }
+        .label {
+            margin: 20px 0 0 25px;
+            font-size: 0.75rem;
+        }
+        .box {
+            padding: 0 80px;
+        }
     }
     /* These styles will be applied to screens that have a width of at least 992px */
     
@@ -110,9 +117,5 @@
         }
         .section4 .projects {
             grid-template-columns: auto auto auto auto;
-        }
-        .label {
-            margin: 20px 0 0 25px;
-            font-size: 0.75rem;
         }
     }
