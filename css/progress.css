@@ -5,11 +5,12 @@
 .boxes {
     position: relative;
     top: 35%;
-    left: 10%;
-    width: 80%;
+    left: 50%;
+    width: 100%;
     max-width: 790px;
     height: 180px;
     font-family: "Open Sans", sans-serif;
+    transform: translate(-50%, -50%);
 }
 
 .box {
@@ -22,7 +23,7 @@
     height: 100%;
     border-radius: 20px;
     box-shadow: 40px 0 65px rgba(212, 197, 186, 0.4);
-    padding: 0 40px;
+    padding: 0 80px;
     box-sizing: border-box;
     opacity: 0;
     transform-origin: center;
@@ -134,8 +135,8 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    margin: 20px 0 0 40px;
-    font-size: 0.45rem;
+    margin: 20px 0 0 25px;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
     transform: translate(-50%, 0);
